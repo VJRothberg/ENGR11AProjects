@@ -10,6 +10,7 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+    
     </head>
     <body>
         <div class="d-flex" id="wrapper">
@@ -54,7 +55,7 @@
                     <h1 class="mt-4">Project 2: Intorduction to CAD Design</h1>
                     <h4>February 7th, 2025</h4>
                     <h2 class="mt-4">Introduction and Overview</h2>
-                    <p>In this project the objective was to get comfortable using CAD to modify pre existing design files from open source sites. I used thingiverse.com<a href="link.html">https://www.thingiverse.com/</a>, thangs.com <a href="link.html"> https://thangs.com/?sort=trending</a>, and printables.com (LINK) to find open source files to work with. First I built a jewelry box using tinkercad, remixing a small hexagon box design into a honeycomb inspired box with a tree element protruding to hold more jewelry. My second design used Fusion 360 to remix a rat house with a ramp from two files. This process was focused on learning CAD design on both tinkercad and Fusion 360, which set up a comparison between the two platforms. Fusion 360 certainly allowed for more customization and technical manipulation, however tinkercad was much more accessible for me, and my level of computer literacy. My personal goal for this process was to create two designs that were functional, and tested the limits of my CAD ability. I also pushed my time constraints on this project. Ambitiously, both of the designs required at least two separate parts and then assembled by hand afterwards.
+                    <p class=p1>In this project the objective was to get comfortable using CAD to modify pre existing design files from open source sites. I used thingiverse.com<a href="link.html">https://www.thingiverse.com/</a>, thangs.com <a href="link.html"> https://thangs.com/?sort=trending</a>, and printables.com<a href="link.html">https://www.printables.com/</a>to find open source files to work with. First I built a jewelry box using tinkercad, remixing a small hexagon box design into a honeycomb inspired box with a tree element protruding to hold more jewelry. My second design used Fusion 360 to remix a rat house with a ramp from two files. This process was focused on learning CAD design on both tinkercad and Fusion 360, which set up a comparison between the two platforms. Fusion 360 certainly allowed for more customization and technical manipulation, however tinkercad was much more accessible for me, and my level of computer literacy. My personal goal for this process was to create two designs that were functional, and tested the limits of my CAD ability. I also pushed my time constraints on this project. Ambitiously, both of the designs required at least two separate parts and then assembled by hand afterwards.
 
 </p>
                     <h3>Project Steps</h3>
@@ -73,67 +74,67 @@
                     </ol>
                     
                     <h3>Jewelry Box</h3>
-                    <p> For my first print I searched through thingiverse looking for inspiration on what to create. I came across a honeycomb inspired box that sparked interest (LINK). The different heights of the box file was an issue so instead I searched for a single hexagon box design(LINK) to duplicate and fuse together using CAD. Then the tree shape file was found(LINK), and with these pieces I moved to tinkercad to begin remixing.
+                    <p> For my first print I searched through thingiverse looking for inspiration on what to create. I came across a honeycomb inspired box that sparked interest <a href="link.html">https://www.thingiverse.com/thing:6491635</a>. The different heights of the box file was an issue so instead I searched for a single hexagon box design <a href= "link.html">https://www.thingiverse.com/thing:79631</a>
+to duplicate and fuse together using CAD. Then the tree shape file was found <a href="link.html">https://www.printables.com/model/490479-tree-jewelry-and-ring-holder-gift-idea-gift-inspir</a>
+, and with these pieces I moved to tinkercad to begin remixing.
 </p>
-                    <img src="assets/Prusatag.png" width=400 height=300></img>
-                    <h6>Name tag file and settings</h6>
-
+                    <img src="assets/Hexboxsketch.png" width=400 height=300></img>
 
                     <h4>Tinkercad Remixing</h4>
                     <p>This program is something that I had previous experience with in both middle and high school. It is a very accessible CAD program with relatively simple and easy to understand functions. However, this does mean more complex designs and customizations are harder to manipulate solely using it. For this jewelry box, the hexagon was my base block, which was duplicated 7 times around a tinkercad hexagon solid shape. Getting these shaped to line up anglewise proved to be quite challenging. What helped was using a mouse and lots of patience zooming in and out at different angles to find any possible gaps. The challenge was putting the tree into the box. I created the hole in the solid hexagon using tinkercad’s grouping and hole functions. Then I was able to duplicate the exact tree size and place it into a separate file to print. This did not go as intended, as the hole for the tree to fit into was slanted, and created a shape that no longer matched the tree’s base when it was printed flat. Overall, I found the grouping, hole, and duplication functions of tinkercad to be the most useful, while the zooming and orbiting view features were tedious.
  </p>
-                    <img src="assets/nametaginitial.jpeg" width="300" height="300"></img >
-                    <h6>Base layers of the name tag</h6>
-                    <img src="assets/nametagbase.jpeg" width="300" height="300"></img>
-                    <h6>Base of the name tag</h6>
-                    <img src="assets/nametagblack.jpg" width="300" height="300"></img>
-                   <h6>Final name tag</h6>
+                    <img src="assets/CADdesign.png" width=500 height=300></img>
+                    <img src="assets/7hexlids.png" width="300" height="300"></img >
+                    <img src="assets/fixedhexbase.png" width="300" height="300"></img >
+                    <img src="assets/treeprint.png" width="500" height="300"></img>
                     
-                       
                     <h4>Printing and Assembly</h4>
                      <p> Since the box was made up of 8 different hexagon shapes the biggest concern was getting all of them to align and fuse together. The base layer looked as if the boxes were too far apart, but to my surprise, the box was successful on its first print. Next I printed the tree file from PrusaSlicer without adjusting any dimensions. When this print finished it was far too thin to fit into the hole, so I looked at the tinkercad dimensions and compared them to PrusaSlicer, which revealed that the z-height of the print was half in the slicer than in CAD. Therefore, I adjusted the z-height in PrusaSlicer from 5 mm to 10.8mm since the tinkercad dimension was 11 mm. After the second print the tree was too large, since I did not leave enough margin in PrusaSlicer. This is also where the slanted configuration of the hole became an apparent problem since the tree did not take the same shape. However, I chose to just file down the end of the tree and wedge it into the hole as it was, which created a strong enough joint for my purposes, but not the stable version I had hoped for. The sliding hexagon tops printed and fit pretty well, if a bit loose. I believe that this design was very successful. 
 
 </p>
-                    <img src="assets/nametaggold.jpeg" width="300" height="300"></img >
-                    <h6>Second name tag base and extra filament</h6>
-                    <img src="assets/nametagfinal.jpeg" width="300" height="300"></img>
-                     <h6>Final name tag</h6>  
+                    <img src="assets/hexbase.png" width="400" height="300"></img >
+                    <img src="assets/boxx.png" width="400" height="300"></img>
+                    <img src="assets/failbox.png" width="400" height="400"></img>
+                    <img src="assets/jewelry.png" width="400" height="400"></img>
+                     
                     <h3>Rat House</h3>
                     <p> 
-                    This design drew on two open source files for a rat house(LINK) and a mouse house(LINK), from which I took only the ramp piece. My drawn design added a skylight to the top of the house, and affixed the ramp to the back of the house. This design was supposed to be remixed only using Fusion 360, but I did end up using tinkercad and PrusaSlicer in addition. The goal was to create a functional rathouse but this pushed the size limits of the printer a bit too far in the end.
+                    This design drew on two open source files for a rat house <a href="link.html">https://www.printables.com/model/188399-rat-house/files</a> and a mouse house <a href="link.html">https://www.thingiverse.com/thing:5437832/files</a>, from which I took only the ramp piece. My drawn design added a skylight to the top of the house, and affixed the ramp to the back of the house. This design was supposed to be remixed only using Fusion 360, but I did end up using tinkercad and PrusaSlicer in addition. The goal was to create a functional rathouse but this pushed the size limits of the printer a bit too far in the end.
                     </p>
-                    <img src="assets/Triconfig.png" width="300" height="300"></img>
-                    <h6> Trireme original configuration</h6>
-                    <img src="assets/Trisettings.png" width="300" height="300"></img>
-                    <h6>Adjusted trireme</h6>
-                    <img src="assets/Triwarnings.png" width="300" height="300"></img>
-                    <h6> Print warnings</h6>
+                    <img src="assets/ratsketch.png" width="500" height="300"></img>
                     <h4>Fusion 360</h4>
-                    <p> This CAD program proved to be quite the struggle, it assumed a fluency with CAD programs and their language. The biggest learning curve was understanding the difference between a mesh object and a surface. There are different modifications that work for a surface, such as sketching, than for a mesh. My goal was to isolate the ramp from the mouse house file and then attach it to the rat house, then cut a hole in the top of the shelter. I ended up isolating the ramp in tinkercad after trying and failing to use the split plane and split face feature for the mesh body. At first the file imported was not cooperating and would not be selected, so I reuploaded it and this did the trick. Once the two mesh bodies were in Fusion, they were aligned and fused together. The next step was to sketch a hole in the top of the house, to sketch on the design the body had to be a surface. However, the file had a very detailed mesh. Trying to convert the mesh crashed my computer twice, before trying to reduce the geometry, which created a misshapen surface. Eventually I repaired the mesh a couple of times and tried converting it as a faceted base form, instead of a prismatic. This finally worked and then I was able to cut a hole in the top using the sketch and hole tools. While I found Fusion 360 to be quite tedious and tough to learn, the orbit and pan shortcuts with the mouse were so much more convenient than tinkercad.
+                    <p> This CAD program proved to be quite the struggle, it assumed a fluency with CAD programs and their language. The biggest learning curve was understanding the difference between a mesh object and a surface. There are different modifications that work for a surface, such as sketching, than for a mesh. My goal was to isolate the ramp from the mouse house file and then attach it to the rat house, then cut a hole in the top of the shelter. I ended up isolating the ramp in tinkercad after trying and failing to use the split plane and split face feature for the mesh body. At first the file imported was not cooperating and would not be selected, so I reuploaded it and this did the trick.</p>
+                    <img src="assets/360facecut.png" width="500" height="300"></img>
+                    <img src="assets/tinkramp.png" width="300" height="300"></img>
+                    <p> Once the two mesh bodies were in Fusion, they were aligned and fused together. The next step was to sketch a hole in the top of the house, to sketch on the design the body had to be a surface. However, the file had a very detailed mesh. Trying to convert the mesh crashed my computer twice, before trying to reduce the geometry, which created a misshapen surface. Eventually I repaired the mesh a couple of times and tried converting it as a faceted base form, instead of a prismatic. This finally worked and then I was able to cut a hole in the top using the sketch and hole tools. While I found Fusion 360 to be quite tedious and tough to learn, the orbit and pan shortcuts with the mouse were so much more convenient than tinkercad.
                     </p>
 
-    <img src="assets/boatinitial.jpeg" width="300" height="300"></img>
-    <h6>Trireme base printing</h6>
-     <img src="assets/boatfinal.jpeg" width="300" height="300"></img> 
-  <h6>Final trireme torture test</h6>
+    <img src="assets/360mesherror.png" width="500" height="300"></img>
+     <img src="assets/360final.png" width="400" height="300"></img> 
+  <img src="assets/rampprusa.png" width="500" height="300"></img>
+  <img src="assets/ratprusa.png" width="400" height="300"></img>
    <h4>Printing</h4>
    <p>This print brought up quite a few challenges in PrusaSlicer. Professor Roy suggested using the cut tool in the normal mode. At first my imported file from Fusion 360 was in 3MF format, so I had to switch to the stl version. This was a different workflow from my previous design where I used two separate files initially, however it worked well here since splitting the design in Fusion proved quite difficult. The PrusaSlicer cut tool selects the plane for the cut and then has you draw the cut line, which makes for easy visualization and accuracy of the split. Then the two parts were put into separate files for printing. The house part of the design was pushing the size capabilities of the Prusa MINI+ so I decided to scale it down to 95%. However because the house had rounded top edges and the door came out from the body, supports were necessary for success, and there was limited space available. I continued to adjust the position on the plate incrementally, but after four tries the size warning kept popping up. When looking closely at the sliced preview it seemed to me that the print would likely still be successful so I chose to ignore the warning, and I turned out to be right. For the ramp file the printing process was smooth, it printed on its side with more minimal organic supports. 
    </p>
+   <img src="assets/rampprint.png" width="300" height="300"></img>
+   <img src="assets/ramp.png" width="300" height="300"></img>
+   <img src="assets/house1.png" width="300" height="300"></img>
    <h4>Assembly</h4>
    <p>Since both pieces used supports meaning there was a good amount of material to remove after printing, especially on the house. It took me about an hour to fully remove the extra supports and sandpaper down the edges of the rat house to my liking. Even though the ramp used very small supports they were so dense that they were a bit difficult to remove as well. Seeing so much material come off of the print made me reflect on the waste produced and energy consumed for this project. The organic supports are only one layer thick so while it looked like a lot of material, the filament weight was relatively small. I have been unable to glue the ramp and house together yet, but they fit together nicely on a flat surface as pictured below. The house and its entrances seemed a bit small but it was tested and approved.</p>
+   <img src="assets/rathouse.png" width="300" height="300"></img>
+   <img src="assets/leftovers.png" width="400" height="300"></img>
+  <img src="assets/assembly.png" width="400" height="300"></img>
+   <img src="assets/gnonch.png" width="300" height="300"></img>
                     <h3>Updating the Website</h3>
-                     <img src="assets/Template.png" width="500" height="300"></img>
-                    <h6>Simple side bar template preview</h6>
                     <p> 
-                    To create this website a couple different open source tools were used in conjunction with each other. Bootstrap templates (<a href="link.html">https://startbootstrap.com/previews/simple-sidebar</a>), Sublime Text, and Github helped me to create and launch this website with relatively few previous skills. The first step was to choose a template and set up my tools. I browsed a couple different templates beginning with just a blank one, however building out this template using CSS coding in Sublime Text would have been greatly time consuming. The other contenders were a blog style website and a simple sidebar style, the latter of which I chose. This allowed me to organize my projects most efficiently in one site, and to work off a previously established code. With relatively little coding experience this was the best option.
-
+                    The first challenge I ran into was unsurprisingly a file organization issue. When I opened Sublime Text through github I could not find the images that I had just put into my assets folder. It turned out that somewhere along the way I had two folders with almost identical project contents, so there were two nearly identical asset folders. Needless to say these were renamed to avoid future confusion. The next issue was linking the new html page for project two to the other html pages. After checking the code rigorously I am still not sure what happened here, and will continue to work on this.
  </p>
-                    <img src="assets/Template.png" width="500" height="300"></img>
-                    <h6>Simple side bar template preview</h6>
+                    <img src="assets/font.png" width="500" height="300"></img>
                     <h4>Photos and Style</h4>
-                    <p></p>
+                    <p>I tried playing around with different fonts, referencing W3 schools sample codes for this, however when I changed font styles the sidebar malfunctioned. Instead of popping up from the side it was across the top of the screen, and I am uncertain why it reacted this way. This is something I will try again next project when I have tech support available. I chose to forgo captions on my photos this time for my website, which helped the layout to look better. There is a lot more that I could focus on when it comes to the aesthetics of my website. 
+</p>
                     <h3>Concluding Thoughts</h3>
-                    <p>
+                    <p>This project was very time intensive due to my design choices, and large prints. While I accomplished my goal of having functional prints there are few areas I would like to explore in my subsequent projects. These goals are using multiple colors in one print, improving my website aesthetics, and trying to create designs that don't require multiple parts. Throughout this project I ran into many challenges, most of which centered around my lack of computer knowledge. This class is pushing my skills in this area and it is exciting to see how much I am able to learn and accomplish. My workflow for web editing was much more effiecient this time as well. Of course there are many areas to improve in, especially in Fusion 360 and web design. Overall, I think that my proficiency with CAD tools has greatly increased and I am much more confident in altering open source designs and using PrusaSlicer.
 </p>
                 </div>
             </div>
