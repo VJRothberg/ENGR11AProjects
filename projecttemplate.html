@@ -49,17 +49,81 @@
                         </div>
                     </div>
                 </nav>
-                <!-- Page content-->
+                             <!-- Page content-->
                 <div class="container-fluid">
                     <h1 class="mt-4">Project 1: Intorduction to 3D Printing</h1>
                     <h4>January 28th, 2025</h4>
-                    <h2 class="mt-4">Introduction and Overview</h2>
-                    <p>For the first project of the semester the goal was to become comfortable using the Prusa MINI+ 3D Printer and to become familiar with the PrusaSlicer. This was achieved by printing a simple name tag from a preexisting design file, and learning how to adjust the settings for the printer to run smoothly. Then printing the tag with a different color filament for the name. Once this was achieved, the limitations of the printer were explored using a ‘torture test’ or calibration test from an open source file. This process included once again adjusting the setting and configuration of the design in PrusaSlicer. Then running the test, which in this case failed part way through as expected. Lastly, using Bootstrap website templates and Sublime Text together, a website was designed and coded to display this project’s documentation. The process and results of this project can be seen below, including a reflection on what went wrong, why and what was learned from this trial and error.
-</p>
-                    <img src="assets/3Dmachine.jpeg" width="400" height="300"></img>
-                    <h6>Prusa MINI+ 3D Printer used for the project</h6>
-                    <h3>Project Steps</h3>
-                    <ol class="list-item">
+                    </div>
+<head>
+<style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle, {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column side">
+    <h2>Project Steps</h2>
+     <ol class="list-item">
                         <li>Download and install PrusaSlicer<li>Download and slice name tag design<li>Set up 3D printer and print name tag base<li>
 Load second filament color and finish name tag print<li>
 Find an open source torture test<li>
@@ -67,15 +131,38 @@ Download, adjust, and print torture test<li>Build website using Bootstrap and Su
 Reflect on the project
 
                     </ol>
+                    <img src="assets/Prusatag.png" width=300 height=200></img>
+                    <h6>Name tag file and settings</h6>
+                    <h3>First Tag</h3>
+                    <p>The name tag printing went relatively smooth, however the print did not pause after the base was complete to change the filament and finish the rest of the design. As seen below the entire tag was printed in black, making the name itself difficult to see. I had walked away from the print assuming that it would stop at the intended point. Why the program did not stop I am still unsure, but it may have something to do with the information that the 3MF file stored in comparison to what an stl file would have. At the time I thought that perhaps someone else had bumped the machine while it was printing and disrupted its flow, therefore I decided to run the print a second time. </p>
                     
-                    <h3>Name Tag Prints</h3>
+  </div>
+  
+  <div class="column middle">
+    <h2>Introduction and Overview</h2>
+    <p>For the first project of the semester the goal was to become comfortable using the Prusa MINI+ 3D Printer and to become familiar with the PrusaSlicer. This was achieved by printing a simple name tag from a preexisting design file, and learning how to adjust the settings for the printer to run smoothly. Then printing the tag with a different color filament for the name. Once this was achieved, the limitations of the printer were explored using a ‘torture test’ or calibration test from an open source file. This process included once again adjusting the setting and configuration of the design in PrusaSlicer. Then running the test, which in this case failed part way through as expected. Lastly, using Bootstrap website templates and Sublime Text together, a website was designed and coded to display this project’s documentation. The process and results of this project can be seen below, including a reflection on what went wrong, why and what was learned from this trial and error.</p>
+    <h2>Name Tag Prints</h2>
                     <p> Once PrusaSlicer was downloaded and set up, a predesigned name tag 3MF file was provided. The settings for this print needed to be adjusted to match the printer's settings. The nozzle on the printer is 0.4 mm so the filament had to match this size, and the speed needed to be set to 0.20 mm speed in PrusaSlicer. These settings allowed for the print to run smoothly, and lay the filament at the right speed to allow the tag to stick to the base and build upon it, and to avoid gaps or stringy lines of filament. Once this was done the 3MF file was exported to a thumb drive and put into the printer. The printer I worked with had filament preloaded into it, but I chose to change the color of my tag base to black, so I unloaded the original one and reloaded the new one after cutting it at a 45 degree angle to ensure it would go in easily. Then I ran a purge to get rid of the excess filament at the tip. This took two rounds of purging before the color came out purely black. Next I selected my name tag file and began the print.
 </p>
+
+                    
+  </div>
+  
+  <div class="column side">
+   <img src="assets/3Dmachine.jpeg" width=400 height=300></img>
+   <h3>Second Tag</h3>
+                     <p> The second print was marginally more successful than the first. I made sure to stay by the printer to see if the program would pause to load the second filament, or if the file had a problem. It turned out that I had to physically pause the printer once the tag base was complete. Why this happened is still a bit of a mystery to me since the file and process I used was the same that others in the class did. Nevertheless, the filament color was changed and the extra was purged twice once again to get a purely gold color. However, this time the extra filament from the purge was not removed from the nozzle entirely so an excess glob was affixed to the tag. My professor helped me try to remove the excess while the printer was running (not the safest technique), but was ultimately unsuccessful. The final result was overall successful even with the few hitches and produced a two colored name tag.
+</p>
+  </div>
+</div>
+                    
+                    
+                    
                     <img src="assets/Prusatag.png" width=400 height=300></img>
                     <h6>Name tag file and settings</h6>
 
 
-                    <h4>First Tag</h4>
+                    <h3>First Tag</h3>
                     <p>The name tag printing went relatively smooth, however the print did not pause after the base was complete to change the filament and finish the rest of the design. As seen below the entire tag was printed in black, making the name itself difficult to see. I had walked away from the print assuming that it would stop at the intended point. Why the program did not stop I am still unsure, but it may have something to do with the information that the 3MF file stored in comparison to what an stl file would have. At the time I thought that perhaps someone else had bumped the machine while it was printing and disrupted its flow, therefore I decided to run the print a second time. </p>
                     <img src="assets/nametaginitial.jpeg" width="300" height="300"></img >
                     <h6>Base layers of the name tag</h6>
@@ -85,7 +172,7 @@ Reflect on the project
                    <h6>Final name tag</h6>
                        
                        
-                    <h4>Second Tag</h4>
+                    <h3>Second Tag</h3>
                      <p> The second print was marginally more successful than the first. I made sure to stay by the printer to see if the program would pause to load the second filament, or if the file had a problem. It turned out that I had to physically pause the printer once the tag base was complete. Why this happened is still a bit of a mystery to me since the file and process I used was the same that others in the class did. Nevertheless, the filament color was changed and the extra was purged twice once again to get a purely gold color. However, this time the extra filament from the purge was not removed from the nozzle entirely so an excess glob was affixed to the tag. My professor helped me try to remove the excess while the printer was running (not the safest technique), but was ultimately unsuccessful. The final result was overall successful even with the few hitches and produced a two colored name tag.
 </p>
                     <img src="assets/nametaggold.jpeg" width="300" height="300"></img >
